@@ -1,4 +1,5 @@
-// src/pages/HomePage.jsx (Perbaikan Final)
+// src/pages/HomePage.jsx
+
 import HeroSection from '../components/HeroSection';
 import StatsSection from '../components/StatsSection';
 import PricingSection from '../components/PricingSection';

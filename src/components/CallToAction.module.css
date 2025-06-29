@@ -1,0 +1,70 @@
+/* src/components/CallToAction.module.css */
+
+.ctaSection {
+  padding: 80px 20px;
+  background-color: var(--color-bg-dark);
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ctaSection h2 {
+  margin-bottom: 15px;
+  font-size: 32px;
+}
+
+.ctaSection p {
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.form input {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-light);
+  font-size: 16px;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+  background-color: #6a1dbd;
+}
+
+.formMessage {
+  margin-top: 20px;
+  color: var(--color-secondary);
+  font-weight: 500;
+}

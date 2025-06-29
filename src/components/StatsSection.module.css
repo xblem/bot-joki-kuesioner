@@ -1,9 +1,9 @@
-/* src/components/StatsSection.module.css (Ganti semua isinya dengan ini) */
+/* src/components/StatsSection.module.css (Perbaikan Final) */
 .statsSection {
   position: relative;
-  background-color: #F5F0F6;
+  background-color: #F5F0F6; /* <-- Warna krem yang benar */
   padding: 120px 20px 80px 20px;
-  margin-top: -1px;
+  margin-top: -1px; 
 }
 .wave {
   position: absolute; top: 0; left: 0; width: 100%;

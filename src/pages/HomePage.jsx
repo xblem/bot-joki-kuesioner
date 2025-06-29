@@ -1,18 +1,16 @@
-// src/pages/HomePage.jsx (Versi Final yang Bersih)
-
+// src/pages/HomePage.jsx (Perbaikan Final)
 import HeroSection from '../components/HeroSection';
 import StatsSection from '../components/StatsSection';
 import PricingSection from '../components/PricingSection';
-import Testimonials from '../components/Testimonials'; // <-- Import kembali
+import Testimonials from '../components/Testimonials';
 
 const HomePage = () => {
   return (
-    // Kita hanya akan menampilkan 3 seksi utama ini untuk sekarang
     <>
       <HeroSection />
       <StatsSection />
       <PricingSection />
-       <Testimonials />
+      <Testimonials />
     </>
   );
 };

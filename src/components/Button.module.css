@@ -1,0 +1,29 @@
+/* Style untuk Komponen Tombol */
+.btn {
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tombol Utama (Kuning) */
+.primary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
+}
+
+/* Tombol Kedua (misalnya: border putih) - bisa kita kembangkan nanti */
+.secondary {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}

@@ -1,0 +1,69 @@
+/* Header.module.css (Versi FINAL dengan Efek Scroll) */
+
+.header {
+  /* Membuat header menempel di atas dan transparan secara default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style tambahan saat header di-scroll */
+.header.scrolled {
+  background-color: var(--color-bg-dark);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-text-light);
+}
+
+.logo img {
+  height: 40px;
+  display: block;
+}
+
+.navDesktop {
+  display: flex;
+  gap: 40px;
+}
+
+.navDesktop a {
+  font-weight: 500;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.navDesktop a:hover {
+  color: var(--color-secondary);
+}
+
+/* Style mobile (tidak berubah) */
+.menuToggle { display: none; font-size: 24px; cursor: pointer; z-index: 1001; color: var(--color-text-light); }
+.navMobile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; position: fixed; top: 0; right: 0; width: 100%; height: 100vh; background-color: var(--color-bg-dark); transform: translateX(100%); transition: transform 0.3s ease-in-out; z-index: 1000; font-size: 24px; font-weight: 500; }
+.navMobileOpen { transform: translateX(0); }
+.navMobile a { cursor: pointer; }
+
+@media (max-width: 768px) {
+  .navDesktop, .btnDesktop { display: none; }
+  .menuToggle { display: block; }
+}

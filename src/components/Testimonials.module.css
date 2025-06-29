@@ -1,0 +1,72 @@
+/* src/components/Testimonials.module.css (Versi Baru) */
+
+.testimonials {
+  padding: 80px 20px;
+  /* Background bisa disamakan dengan body atau sedikit beda */
+  background-color: var(--color-bg-dark); 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.title {
+  color: var(--color-text-light);
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+.card {
+  /* Menggunakan warna kartu dari style guide baru */
+  background-color: var(--color-card-bg);
+  color: var(--color-text-dark); /* Teks gelap di atas kartu terang */
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote {
+  margin-bottom: 25px;
+  font-style: italic;
+  color: #333;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.authorTitle {
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

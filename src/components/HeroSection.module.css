@@ -1,0 +1,38 @@
+/* src/components/HeroSection.module.css (Ganti semua isinya dengan ini) */
+.hero {
+  position: relative;
+  background-color: var(--color-bg-dark);
+  padding: 100px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.container { max-width: 800px; position: relative; z-index: 2; }
+.hero h1 { font-size: 52px; line-height: 1.2; margin-bottom: 20px; }
+.hero p { font-size: 18px; color: var(--color-text-muted); margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+.inputWrapper { position: relative; max-width: 600px; margin: 0 auto; }
+.inputWrapper input {
+  width: 100%; padding: 20px 70px 20px 25px; border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-light); font-size: 16px;
+}
+.inputWrapper input::placeholder { color: var(--color-text-muted); }
+.inputWrapper input:focus { outline: none; border-color: var(--color-primary); }
+.inputWrapper button {
+  position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+  width: 50px; height: 50px; border-radius: 50%; background-color: var(--color-primary);
+  color: var(--color-text-light); border: none; cursor: pointer; font-size: 20px;
+  display: flex; align-items: center; justify-content: center; transition: background-color 0.2s ease;
+}
+.inputWrapper button:hover { background-color: #6a1dbd; }
+.stars { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+.star { position: absolute; border-radius: 50%; background-color: var(--color-secondary); animation: twinkle 5s infinite ease-in-out; }
+.star:nth-child(1) { width: 4px; height: 4px; top: 10%; left: 15%; animation-delay: 0s; }
+.star:nth-child(2) { width: 6px; height: 6px; top: 20%; left: 80%; background-color: var(--color-primary); animation-delay: 1s; }
+.star:nth-child(3) { width: 3px; height: 3px; top: 70%; left: 90%; animation-delay: 2s; }
+.star:nth-child(4) { width: 5px; height: 5px; top: 80%; left: 25%; background-color: var(--color-text-light); animation-delay: 3s; }
+.star:nth-child(5) { width: 4px; height: 4px; top: 40%; left: 50%; animation-delay: 4s; }
+@keyframes twinkle { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(0.5); opacity: 0.5; } }
